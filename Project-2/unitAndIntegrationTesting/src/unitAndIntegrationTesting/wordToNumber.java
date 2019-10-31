@@ -4,7 +4,7 @@ import java.util.*;
 
 public class wordToNumber {
 
-	public long wordToNum() {
+	public long wordToNum(String input) {
 		boolean isValidInput = true;
 	    long result = 0;
 	    long finalResult = 0;
@@ -16,8 +16,6 @@ public class wordToNumber {
 	    "thirty","forty","fifty","sixty","seventy","eighty","ninety",
 	    "hundred","thousand","million","billion","trillion"
 	    );
-	
-	    String input="One hundred three thousand and thirty four";
 	
 	    if(input != null && input.length()> 0)
 	    {
@@ -156,6 +154,7 @@ public class wordToNumber {
 	}
 	public static void main(String args[]) {
 		wordToNumber wToN = new wordToNumber();
-		wToN.wordToNum();
+		String input="fifty million one hundred three thousand and thirty four";
+		wToN.wordToNum(input);
 	}
 }
